@@ -1,0 +1,18 @@
+==== QEMU with Selfie Block Device Format
+Selfie is a virtual block device format introduced in
+"Selfie: Co-locating Metadata and Data to Enable Fast Virtual Block Devices".
+By Xingbo Wu, Zili Shao, and Song Jiang. [SYSTOR'15]
+
+The code is based on QEMU-v2.2.0. See block/selfie.c for the Selfie driver.
+
+Build QEMU:
+  $ ./cfg.sh
+  $ ./make.sh
+
+Usage:
+  See selfie-test/qenv.sh:plug_selfie() for details of 'selfie' image format.
+
+==== Original QEMU README
+Read the documentation in qemu-doc.html or on http://wiki.qemu-project.org
+
+- QEMU team

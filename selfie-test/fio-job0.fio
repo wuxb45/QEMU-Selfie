@@ -1,0 +1,21 @@
+# RT NJ DEV RW BS
+[global]
+direct=1
+ioengine=psync
+thread
+fdatasync=1
+runtime=${RT}
+numjobs=${NJ}
+filename=${DEV}
+rw=${RW}
+bs=${BS}
+offset_increment=${INC}
+#size=${SZ}
+
+##; image format [raw|qcow2|fvd|selfie]
+##; block size [4KB|64KB|1MB]
+
+## rw: write mode [read|write|randread|randwrite]
+## bs: write unit [kMG]
+
+[job0]
